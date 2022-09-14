@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-V.ttf);
+}
+
+body {
+    font-family: Inter;
+    background-color: #F2F2F2;
+    margin: 80px 10%;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.case p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+
+}
+
+section {
+    margin-bottom: 180px;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 24px;
+    padding: 32px;
+    font-family: Inter;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.wms {
+    background-color: #6B6DF6;
+}
+
+.orb {
+    background-color:#F66BB6;
+    ;
+}
+
+.case_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 2%;
+}
+
+.case_picture img {
+    margin: 10%;
+}
+
+button {
+    background-color: white;
+    border-radius: 32px;
+    font-size: 24px;
+    padding: 14px 24px;
+    border: none;
+}
+
+.case_description h1 {
+    margin-bottom: 24px;
+}
+
+.case_description p {
+    margin-bottom: 48px;
+}
+
+/* .employee div{
+    border: solid 1px black;
+} */
+
+.employee {
+    display: flex;
+}
+
+.employee_info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E9E9E9;
+    border-radius: 24px;
+    padding: 32px;
+    color: black;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 65%;
+}
+
+.employee_name {
+    width: 15%;
+}
+
+.years_working {
+    width: 15%;
+}
+
+.responsibilities {
+    width: 60%;
+}
+
+.employee_photo {
+    width: 35%;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #666666;
+}
+
+.experience_description {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.experience_description h1 {
+    margin-right: 5%;
+}
+
+.experience_description p {
+    margin-left: 5%;
+}
