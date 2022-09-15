@@ -6,7 +6,7 @@
 body {
     font-family: Inter;
     background-color: #F2F2F2;
-    margin: 80px 10%;
+    margin: 5rem 0rem;
 }
 
 h1 {
@@ -27,18 +27,20 @@ h1 {
 }
 
 section {
-    margin-bottom: 180px;
+    width: 1120px;
+    margin-bottom: 12.5rem;
+    margin: auto;
 }
 
 .case {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    border-radius: 24px;
-    padding: 32px;
+    border-radius: 1.5rem;
+    padding: 2rem;
     font-family: Inter;
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .wms {
@@ -71,46 +73,41 @@ section {
 
 button {
     background-color: white;
-    border-radius: 32px;
+    border-radius: 2rem;
     font-size: 24px;
-    padding: 14px 24px;
+    padding: 14px 1.5rem;
     border: none;
 }
 
 .case_description h1 {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .case_description p {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
-
-/* .employee div{
-    border: solid 1px black;
-} */
 
 .employee {
     display: flex;
+    margin-bottom: 0.5rem;
+    line-height: 24px;
 }
 
 .employee_info {
     display: flex;
     justify-content: space-between;
     background-color: #E9E9E9;
-    border-radius: 24px;
-    padding: 32px;
+    border-radius: 1.5rem;
+    padding: 2rem;
     color: black;
-    margin-bottom: 8px;
-    margin-right: 8px;
+    margin-right: 0.5rem;
     width: 65%;
 }
 
-.employee_name {
-    width: 15%;
-}
-
-.years_working {
-    width: 15%;
+.name_and_years {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .responsibilities {
@@ -119,23 +116,115 @@ button {
 
 .employee_photo {
     width: 35%;
+    height: 320px;
+    /* background: url(media/byndyosoft_era.JPEG);
+    background-position: 0 -80px;
+    background-size: cover; */
+    border-radius: 1.5rem;
+}
+
+.bs .employee_photo {
+    background: url(media/byndyosoft_era.JPEG);
+    background-position: 0 -80px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.nap .employee_photo {
+    background: url(media/nap_era.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.fr .employee_photo {
+    background: url(media/fr_era.JPG);
+    background-position: 0 0;
+    background-size: cover;
+    filter: grayscale(100%);
 }
 
 p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #666666;
 }
 
-.experience_description {
+.section_description {
     display: flex;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-.experience_description h1 {
-    margin-right: 5%;
+.section_description h1 {
+    width: 30%;
+    margin: 0 0;
 }
 
-.experience_description p {
-    margin-left: 5%;
+.section_description p {
+    width: 60%;
+    margin: 0 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+
+    section {
+        margin: 0 1rem 6rem;
+        width: auto;
+    }
+
+    .section_description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section_description h1 {
+        width: auto;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+        font-size: 2rem;
+    }
+
+    .section_description p {
+        width: auto;
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    .employee {
+        flex-direction: column-reverse;
+        
+    }
+
+    .employee_photo {
+        width: auto;
+    }
+
+    .employee_info {
+        flex-direction: column;
+        width: auto;
+        margin: 0.5rem 0 0 0;
+        padding: 1.5rem;
+    }
+
+    .name_and_years {
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 2rem;
+    }
+
+    .employee_name {
+        margin-bottom: 0.25rem;
+    }
+
+    .employee a {
+        color: black;
+    }
+
+    .responsibilities {
+        width: auto;
+    }
 }
