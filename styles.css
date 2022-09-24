@@ -5,6 +5,8 @@
 
 body {
     font-family: Inter;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     background-color: #F2F2F2;
     margin: 5rem 0rem;
     scroll-behavior: smooth;
@@ -24,6 +26,26 @@ h1 {
     letter-spacing: 0em;
     text-align: left;
 }
+
+h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* li {
+    margin-bottom: 0.5rem;
+} */
 
 .case p {
     font-size: 18px;
@@ -97,11 +119,6 @@ button {
 .employee {
     display: flex;
     margin-bottom: 0.5rem;
-    line-height: 24px;
-}
-
-.employee a {
-    text-decoration: underline;
 }
 
 .employee_info {
@@ -116,13 +133,28 @@ button {
 }
 
 .name_and_years {
-    width: 33%;
+    width: 25%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.employee_name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.employee_name h3 {
+    margin-right: 0.5rem;
+}
+
+.years_working {
+    color: #666666;
 }
 
 .responsibilities {
-    width: 60%;
+    width: 66%;
 }
 
 .employee_photo {
@@ -160,17 +192,11 @@ button {
     filter: grayscale(100%);
 }
 
-p {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #666666;
-}
-
 .section_description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
 }
 
 .section_description h1 {
@@ -179,8 +205,13 @@ p {
 }
 
 .section_description p {
-    width: 60%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #666666;
+    width: 64%;
     margin: 0 0;
+    padding-top: 8px;
 }
 
 
@@ -224,6 +255,10 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+}
+
+.activity_name {
+    width: 85%;
 }
 
 .low_row {
@@ -292,7 +327,7 @@ p {
     }
 
     .employee_name {
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
     }
 
     .employee a {
@@ -323,6 +358,10 @@ p {
 
     .Activities .section_description {
         margin-bottom: 0;
+    }
+
+    .activity {
+        height: 11rem;
     }
 
 
