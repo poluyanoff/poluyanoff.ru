@@ -10,6 +10,12 @@ body {
     scroll-behavior: smooth;
 }
 
+a, a:focus, a:hover, a:link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 h1 {
     font-family: Inter;
     font-size: 48px;
@@ -92,6 +98,10 @@ button {
     display: flex;
     margin-bottom: 0.5rem;
     line-height: 24px;
+}
+
+.employee a {
+    text-decoration: underline;
 }
 
 .employee_info {
@@ -193,22 +203,20 @@ p {
 
 .activity {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    height: 5rem;
-    background-color: #E6E6E6;
-    border-radius: 1rem;
-}
-
-.activity2 {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem;
     height: 7rem;
+    margin-bottom: 0.5rem;
     background-color: #E6E6E6;
     border-radius: 1rem;
+    transition-duration: 0.2s;
+}
+
+.activity:hover {
+    cursor: pointer;
+    background-color: #eaeaea;
+    transform: scale(1.03);
 }
 
 .top_row {
@@ -294,4 +302,28 @@ p {
     .responsibilities {
         width: auto;
     }
+
+    /* ------------------ Activities ------------------ */
+
+    .Activities {
+        flex-direction: column;
+    }
+
+    .publicity {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 5rem;
+    }
+
+    .speaker {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .Activities .section_description {
+        margin-bottom: 0;
+    }
+
+
 }
