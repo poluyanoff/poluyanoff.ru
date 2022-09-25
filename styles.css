@@ -3,6 +3,11 @@
     src: url(fonts/Inter-V.ttf);
 }
 
+@font-face {
+    font-family: Formular;
+    src: url(fonts/Formular.ttf);
+}
+
 body {
     font-family: Inter;
     font-size: 1.125rem;
